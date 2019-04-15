@@ -1,0 +1,32 @@
+html{
+    margin:0;
+    height: 100%;
+    background-color: #4b917d;
+    color:white;
+    font-family: 'Barlow', sans-serif;
+}
+body{
+    height: 100%;
+}
+.main{
+    height: 100%;
+    position: relative;
+    text-align: center;
+}
+.main > div{
+    position: absolute;
+    top: 35%;
+    left: 0;
+    right: 0;
+}
+.intro{
+    font-size: 48px;
+}
+.desc{
+    margin-top:30px;
+    font-size: 36px;
+}
+.footer{
+    margin-top:60px;
+    font-size: 30px;
+}
