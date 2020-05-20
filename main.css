@@ -1,102 +1,90 @@
 body {
-    font-family: arial;
-    min-height: 100%;
-    margin:0;
-    font-family: 'Segoe UI Light', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 100;
-  }
+  font-family: "Arial, sans-serif";
+  margin: 0;
+  overflow: hidden;
+}
+.container {
+  display: grid;
+  width: 100vw;
+  height: 100vw;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: auto;
+}
+
+/* Left or upper info */
+.left {
+  height: 100%;
+  background-color: #faf3dd;
+}
+.info {
+  margin-top: 50%;
+  margin-left: 5%;
+}
+.intro {
+  font-family: "Courier New", Courier, monospace;
+}
+#ms-twitter-link {
+  text-decoration: none;
+  color: rgb(112, 159, 212);
+}
+#ms-twitter-link:hover {
+  color: rgb(56, 87, 122);
+}
+.img-link {
+  max-width: 50px;
+}
+.img-link:hover {
+  filter: invert(100%);
+}
+/* Right or upper info */
+.right {
+  background-color: #aed9e0;
+  text-align: center;
+}
+#vscode {
+  margin-top: 15%;
+}
+#vscode-img:hover {
+  box-shadow: 20px 20px 45px rgb(71, 69, 69);
+  filter: invert(100%);
+}
+#vscode-img {
+  box-shadow: 20px 20px 40px rgb(71, 69, 69);
+  max-width: 90%;
+}
+.code-label {
+  margin-left: 5%;
+  max-width: 89%;
+  text-align: left;
+  font-family: monospace;
+  color: #fff;
+  background-color: rgb(45, 45, 46);
+  border-radius: 2px;
+  padding-left: 1%;
+  padding-bottom: 0.3%;
+}
+
+@media screen and (max-width: 1000px) {
   .container {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    grid-template-rows: auto auto;
+    grid-template-columns: 100%;
   }
-  @media (min-width: 1167px) {
-    .container {
-      display: grid;
-      grid-template-columns: auto auto auto; 
-    }
+  #vscode-img:hover {
+    box-shadow: 20px 20px 45px rgb(71, 69, 69);
+    max-width: 91%;
+    margin-left: -0.5%;
   }
-  .summary {
-    background-color: #07575B;
-    padding: 20px;
+  .right {
+    min-height: 800px;
   }
-  .experience {
-    padding: 20px;
-    background-color: #003B46;
+  .left {
+    min-height: 500px;
   }
-   
-  .education {
-    padding: 20px;
-    background-color: #66A5AD;
+  .info {
+    margin-top: 20%;
+    margin-left: 5%;
   }
-  .col-title {
-      text-align: center;
-      font-size: 50px;
-      color: white;
+  body {
+    overflow: scroll;
   }
-  .skills-title {
-    text-align: center;
-    font-size: 36px;
-    color: white;
-    margin-top: 10px;
-  }
-  .name-title {
-    text-align: center;
-    font-size: 40px;
-    font-weight: 100;
-    color: white;
-  }
-  .info-card {
-      color: black;
-      border-style: solid;
-      border-width: 0.5px;
-      border-color: white;
-      background-color: #C4DFE6;
-      padding: 10px;   
-      margin-bottom: 5px;
-  }
-  .info-card-header {
-    text-align: center;
-    font-size: 30px;
-  }
-  .info-card-blank {
-    color: white;
-    border-style: solid;
-    border-width: 0.5px;
-    border-color: white;
-    padding: 10px;
-    margin-bottom: 5px;
-  }
-  .info-card-ex-title {
-    font-size: 20px;
-  }  
-  .info-list > li {
-    margin:20px;
-  }
-  .rating {
-    border-left: solid black 0.5px;
-  }
-  .contact {
-    font-size: 30px;
-  }
-  table {
-    width: 100%;
-    text-align: center;
-    border-collapse: collapse;
-  }
-  td {
-    width: 200px;
-  }
-  img {
-    max-width: 40px;
-    vertical-align: text-bottom;
-  }
-  .experience-summary {
-    position:relative;
-  }
-  .experience-summary-img { 
-    position:absolute;
-    margin:auto;
-    margin-left: 5px;
-    max-width: 30px;
-  }
+}
