@@ -27,10 +27,10 @@ body {
 }
 #ms-twitter-link {
   text-decoration: none;
-  color: rgb(60, 100, 145);
+  color: rgb(41, 68, 99);
 }
 #ms-twitter-link:hover {
-  color: rgb(16, 54, 97);
+  color: rgb(3, 32, 65);
 }
 .img-link {
   max-width: 50px;
