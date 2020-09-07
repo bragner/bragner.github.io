@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Johan Bragner</title>
+    <title>Johan Bragner - Consultant | Microsoft | Developer</title>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="format-detection" content="telephone=no" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Johan Bragner's personal website. Info and posts about development, .NET Core, Python, Azure"
+    />
+    <link rel="canonical" href="https://bragner.github.io/" />
     <link rel="stylesheet" href="main.css" />
     <link rel="icon" type="image/png" href="img/favicon.ico" />
   </head>
@@ -32,13 +37,13 @@
               ><img
                 alt="LinkedIn Logo as link to profile"
                 class="img-link"
-                src="img/li-logo.png"
+                src="img/li-logo.webp"
             /></a>
             <a target="_blank" href="https://github.com/bragner"
               ><img
                 alt="GitHub Logo as link to profile"
                 class="img-link"
-                src="img/github-logo.png"
+                src="img/github-logo.webp"
             /></a>
           </div>
         </div>
@@ -66,8 +71,15 @@
             ><img
               alt="Visual Studio Code snapshot of current project"
               id="vscode-img"
-              src="img/vscode2.png"
+              src="img/vscode2.webp"
           /></a>
+        </div>
+        <div>
+          {% for post in site.posts %}
+
+          <a href="{{ post.url }}">{{ post.title }}</a>
+          <br />
+          {% endfor %}
         </div>
       </div>
     </div>

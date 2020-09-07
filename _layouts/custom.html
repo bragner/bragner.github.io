@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Johan Bragner - Consultant | Microsoft | Developer</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Johan Bragner's personal website. Info and posts about development, .NET Core, Python, Azure"
+    />
+    <link rel="canonical" href="https://bragner.github.io/">
+    <link rel="stylesheet" href="../../../main.css" />
+    <link rel="icon" type="image/png" href="../../../img/favicon.ico" />
+  </head>
+  <body>
+    <div role="main" class="container">
+        <div class="left">
+          <div class="info">
+            <h1>
+              HI.
+              <br />
+              I'M A DEVELOPER.
+            </h1>
+            <div class="intro">
+              Currently working at
+              <a
+                target="_blank"
+                id="ms-twitter-link"
+                href="http://twitter.com/microsoft"
+                >Microsoft</a
+              >.
+              <br />
+              <br />
+              <a target="_blank" href="https://www.linkedin.com/in/johan-bragner/"
+                ><img
+                  alt="LinkedIn Logo as link to profile"
+                  class="img-link"
+                  src="../../../img/li-logo.webp"
+              /></a>
+              <a target="_blank" href="https://github.com/bragner"
+                ><img
+                  alt="GitHub Logo as link to profile"
+                  class="img-link"
+                  src="../../../img/github-logo.webp"
+              /></a>
+            </div>
+          </div>
+
+        </div>
+        <div class="right">
+          <div class="blog-post">
+            <a href="/">👈 - back</a>
+            <h1>{{ page.title }}</h1>
+            <p class="blog-post-meta">{{page.date | date_to_long_string}}</p>
+            <section>{{ content }}</section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
